@@ -3,11 +3,11 @@ import Selfie from "../img/Selfie.jpg";
 
 function About() {
   return (
-    <div className="grid grid-cols-1 grid-rows-1 sm:grid-cols-4 sm:grid-rows-1 gap-4 text-center">
+    <div className="grid grid-cols-1 grid-rows-1 ml-4 mr:2 sm:grid-cols-4 sm:grid-rows-1 gap-4 text-center sm:ml-4">
       <div className="bg-blue-200 rounded">
         <img class="w-full h-full mx-auto" src={Selfie} alt="selfie" />
       </div>
-      <div className="bg-blue-300 rounded">
+      <div className="bg-blue-300 row-span-2 rounded">
         <p class="text-gray-700 font-bold text-base">
           I'm a FullStack web developer and a systems engineer in process, I'm
           always looking to learn new things and I have a tendency to study
@@ -15,22 +15,19 @@ function About() {
           problem solving, logical thinking and empathic.
         </p>
       </div>
-      <div className="bg-blue-400 rounded col-span-1 row-span-1 sm:col-span-2 sm:row-span-3">
-      <div class="px-5 mx-auto py-5 font-bold text-base border rounded">FrontEnd</div>
+      <div className="bg-blue-400 rounded col-span-1 row-span-1 gap-4 sm:col-span-2 sm:row-span-2">
+      <div class="px-5 mx-auto py-5 font-bold text-base border  rounded">FrontEnd</div>
         <div class="px-5 mx-auto py-5 font-bold text-base border rounded">BackEnd</div>
         <div class="px-5 mx-auto py-5 font-bold text-base border rounded">DataBase</div>
       </div>
       <div className="bg-blue-200 rounded">
         <div class="font-bold text-xl mb-2 mx-auto">
           Alejandro Palacios Gomez
+          <p class="text-gray-700 text-base mx-auto">FullStack Web Developer</p>
         </div>
       </div>
-      <div className="bg-blue-300 rounded row-span-1 sm:row-span-2">
-        I'm this and that
-      </div>
-      <div className="bg-blue-200 rounded">
-        <p class="text-gray-700 text-base mx-auto">FullStack Web Developer</p>
-      </div>
+      
+      
     </div>
   );
 }
