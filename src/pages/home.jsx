@@ -1,5 +1,5 @@
 import {React,Fragment } from "react";
-import selfie from "../img/Selfie.png";
+import CubeAnimation from "../componentes/cube";
 
 function Home() {
   return (
@@ -7,10 +7,10 @@ function Home() {
       <header className="bg-gray-900">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold leading-tight text-white">
-            Bienvenido a mi sitio web
+            Soy Alejandro Palacios Gomez
           </h1>
           <p className="mt-1 text-lg text-gray-400">
-            Aquí encontrarás información sobre nuestros servicios y productos.
+           FullStack Web developer
           </p>
         </div>
       </header>
@@ -31,22 +31,15 @@ function Home() {
               <div className="bg-white overflow-hidden shadow rounded-lg">
                 <div className="px-4 py-5 sm:p-6">
                   <h3 className="text-lg font-medium leading-6 text-gray-900">
-                    Servicio 2
-                  </h3>
-                  <p className="mt-2 max-w-2xl text-sm text-gray-500">
-                    Descripción del servicio 2.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-white overflow-hidden shadow rounded-lg">
-                <div className="px-4 py-5 sm:p-6">
-                  <h3 className="text-lg font-medium leading-6 text-gray-900">
                     Servicio 3
                   </h3>
                   <p className="mt-2 max-w-2xl text-sm text-gray-500">
                     Descripción del servicio 3.
                   </p>
                 </div>
+              </div>
+              <div >
+                    <CubeAnimation/>
               </div>
             </div>
           </div>
