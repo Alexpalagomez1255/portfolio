@@ -1,10 +1,77 @@
-import React from "react";
+import {React,Fragment } from "react";
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Contact() {
   return (
-    <div class=" container mx-5 my-8 p-1 text-center">
-      <h1 class="text-3xl font-bold underline">This is contact me!!</h1>
+    <Fragment>
+    <header className="bg-gray-900">
+      <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <h1 className="text-3xl font-bold leading-tight text-white">
+          Contáctame
+        </h1>
+        <p className="mt-1 text-gray-300">
+          Puedes encontrarme en estas plataformas:
+        </p>
+      </div>
+    </header>
+    <div className="bg-gray-100 py-8">
+      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-white overflow-hidden shadow rounded-lg">
+            <div className="px-4 py-5 sm:p-6">
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <FaEnvelope className="h-6 w-6 text-gray-400" />
+                </div>
+                <div className="ml-4">
+                  <div className="text-sm font-medium text-gray-900">
+                    Email
+                  </div>
+                  <div className="text-sm text-gray-500">
+                    <a href="mailto:tu-email@example.com">tu-email@example.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white overflow-hidden shadow rounded-lg">
+            <div className="px-4 py-5 sm:p-6">
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <FaLinkedin className="h-6 w-6 text-gray-400" />
+                </div>
+                <div className="ml-4">
+                  <div className="text-sm font-medium text-gray-900">
+                    LinkedIn
+                  </div>
+                  <div className="text-sm text-gray-500">
+                    <a href="https://www.linkedin.com/in/tu-linkedin/">linkedin.com/in/tu-linkedin/</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white overflow-hidden shadow rounded-lg">
+            <div className="px-4 py-5 sm:p-6">
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <FaGithub className="h-6 w-6 text-gray-400" />
+                </div>
+                <div className="ml-4">
+                  <div className="text-sm font-medium text-gray-900">
+                    GitHub
+                  </div>
+                  <div className="text-sm text-gray-500">
+                    <a href="https://github.com/tu-usuario">github.com/tu-usuario</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </Fragment>
   );
 }
 

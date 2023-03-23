@@ -2,11 +2,14 @@ import React from "react";
 
 function Footer() {
   return (
-    <div class="flex flex-wrap">
-      <div class="bg-cyan-800 container py-2 text-left rounded w-full">
-        <p class="text-white font-bold text-xl mb-2 mx-auto px-1">footer</p>
-      </div>
-    </div>
+    <footer className="bg-gray-800">
+        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <p className="text-left text-white">
+            © {new Date().getFullYear()} Alejandro Palacios Gomez. Todos los derechos
+            reservados.
+          </p>
+        </div>
+      </footer>
   );
 }
 

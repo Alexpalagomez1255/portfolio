@@ -1,61 +1,135 @@
-import React from "react";
+import { React, Fragment } from "react";
+import selfie from "../img/Selfie2.jpg";
+import '@fortawesome/fontawesome-free/css/all.css';
 
 function About() {
+  const technologiesFrontend = [
+    { name: "React", icon: "fab fa-react" },
+    { name: "Vue.js", icon: "fab fa-vuejs" },
+    { name: "Angular", icon: "fab fa-angular" },
+  ];
+
+  const technologiesBackend = [
+    { name: "Node.js", icon: "fab fa-node-js" },
+    { name: "PHP", icon: "fab fa-php" },
+    { name: "Java", icon: "fab fa-java" },
+  ];
+
+  const technologiesDatabase = [
+    { name: "MySQL", icon: "fas fa-database" },
+    { name: "MongoDB", icon: "fas fa-database" },
+    { name: "PostgreSQL", icon: "fas fa-database" },
+  ];
   return (
-    <div class="flex justify-around">
-      <div class="grid grid-rows-4 text-center">
-        <div class="bg-slate-200 grid-cols-4">
-          <div>Picture</div>
-          <div>I'm ....</div>
-          <div>Alejandro Palacios</div>
-          <div>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+    <Fragment>
+      <header className="bg-gray-900">
+        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <h1 className="text-3xl font-bold leading-tight text-white">
+            Sobre mí
+          </h1>
+          <p className="mt-1 text-lg text-gray-400">
+            Aquí encontrarás información sobre mí y mis habilidades.
+          </p>
+        </div>
+      </header>
+      <main>
+        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+          <div className="px-4 py-6 sm:px-0">
+            <div className="flex flex-col sm:flex-row">
+              <div className="sm:w-1/3">
+                <img
+                  src={selfie}
+                  alt="Foto de perfil"
+                  className="w-full h-auto object-cover rounded-lg"
+                />
+              </div>
+              <div className="sm:w-2/3 sm:pl-8">
+                <h2 className="text-2xl font-bold leading-tight text-gray-900">
+                  Mi nombre completo
+                </h2>
+                <p className="mt-2 text-lg text-gray-500">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  ac tortor nulla. Integer vitae justo velit. Maecenas varius
+                  turpis quis eros bibendum, vel rutrum ex finibus.
+                </p>
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                  
+                  <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="bg-white overflow-hidden shadow rounded-lg">
+                      <div className="px-4 py-5 sm:p-6">
+                        <h3 className="text-lg leading-6 font-medium text-gray-900 text-center">
+                          Frontend Technologies
+                        </h3>
+                        <div className="mt-2 flex items-center justify-center">
+                          <ul className="space-y-4">
+                            {technologiesFrontend.map((technology) => (
+                              <li
+                                key={technology.name}
+                                className="flex items-center space-x-2"
+                              >
+                                <i
+                                  className={`${technology.icon} text-indigo-500`}
+                                />
+                                <span>{technology.name}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-white overflow-hidden shadow rounded-lg">
+                      <div className="px-4 py-5 sm:p-6">
+                        <h3 className="text-lg leading-6 font-medium text-gray-900 text-center">
+                          Backend Technologies
+                        </h3>
+                        <div className="mt-2 flex items-center justify-center">
+                          <ul className="space-y-4">
+                            {technologiesBackend.map((technology) => (
+                              <li
+                                key={technology.name}
+                                className="flex items-center space-x-2"
+                              >
+                                <i
+                                  className={`${technology.icon} text-indigo-500`}
+                                />
+                                <span>{technology.name}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-white overflow-hidden shadow rounded-lg">
+                      <div className="px-4 py-5 sm:p-6">
+                        <h3 className="text-lg leading-6 font-medium text-gray-900 text-center">
+                          Database Technologies
+                        </h3>
+                        <div className="mt-2 flex items-center justify-center">
+                          <ul className="space-y-4">
+                            {technologiesDatabase.map((technology) => (
+                              <li
+                                key={technology.name}
+                                className="flex items-center space-x-2"
+                              >
+                                <i
+                                  className={`${technology.icon} text-indigo-500`}
+                                />
+                                <span>{technology.name}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="bg-slate-300">Row 2</div>
-        <div class="bg-slate-400">Row 3</div>
-        <div class="bg-slate-500">Row 4</div>
-      </div>
-    </div>
+      </main>
+    </Fragment>
   );
 }
 
 export default About;
-// <div class="container mx-auto mt-5 text-center">
-//   <div class="grid grid-rows-3 grid-flow-col gap-4 mx-auto">
-//     <div class="grid grid-cols-1 mx-auto sm:row-span-3 max-w-sm rounded overflow-hidden shadow-lg">
-//       <img class="w-full mx-auto" src={Selfie} alt="selfie" />
-//       <div class="px-6 py-4">
-//         <div class="font-bold text-xl mb-2 mx-auto">
-//           Alejandro Palacios Gomez
-//         </div>
-//         <p class="text-gray-700 text-base mx-auto">FullStack Web Developer</p>
-//       </div>
-//     </div>
-//     <div class="grid grid-cols-1 mx-auto sm:col-span-2 font-bold text-xl mb-2 ">
-//       Let me tell you who I am...
-//     </div>
-//     <div class="grid grid-cols-1 sm:row-span-2 col-span-2 mx-auto">
-//       <p class="text-gray-700 font-bold text-base">
-//         I'm a FullStack web developer and a systems engineer in process, I'm
-//         passionate about technology and devourer of new knowledge, I'm
-//         always looking to learn new things and I have a tendency to study
-//         emerging technologies as well, I am proactive, autonomous, teamwork,
-//         problem solving, logical thinking and empathic.{" "}
-//       </p>
-//       <div class="grid grid-cols-1 sm:flex flex-row mx-auto">
-// <div class="px-5 mx-auto py-5 font-bold text-base border rounded">FrontEnd</div>
-// <div class="px-5 mx-auto py-5 font-bold text-base border rounded">BackEnd</div>
-// <div class="px-5 mx-auto py-5 font-bold text-base border rounded">DataBase</div>
-//       </div>
-//     </div>
-//   </div>
-// </div>

@@ -7,7 +7,9 @@ function Layout() {
   return (
     <>
       <Navbar />
+      <div className="flex flex-col h-screen">
       <Outlet/>
+      </div>
       <Footer />
     </>
   );
