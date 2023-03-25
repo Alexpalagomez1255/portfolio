@@ -1,5 +1,5 @@
 import {React,Fragment } from "react";
-import CubeAnimation from "../componentes/cube";
+
 
 function Home() {
   return (
@@ -39,7 +39,7 @@ function Home() {
                 </div>
               </div>
               <div >
-                    <CubeAnimation/>
+                    
               </div>
             </div>
           </div>

@@ -2,30 +2,31 @@ import { React, Fragment } from "react";
 import selfie from "../img/Selfie2.jpg";
 import '@fortawesome/fontawesome-free/css/all.css';
 
+
 function About() {
   const technologiesFrontend = [
     { name: "React", icon: "fab fa-react" },
-    { name: "Vue.js", icon: "fab fa-vuejs" },
-    { name: "Angular", icon: "fab fa-angular" },
+    { name: "Redux", icon: "fa fa-arrow-right" },
+    { name: "Javascript", icon: "fab fa-square-js" },
+    { name: "TailwindCss", icon: "fa-brands fa-css3-alt" },
   ];
 
   const technologiesBackend = [
     { name: "Node.js", icon: "fab fa-node-js" },
-    { name: "PHP", icon: "fab fa-php" },
-    { name: "Java", icon: "fab fa-java" },
+    { name: "Express Js", icon: "fa fa-arrow-right", icon2:"fab fa-node-js" },
+    { name: "Sequelize", icon: "fa fa-arrow-right" , icon2:"fab fa-node-js" }
   ];
 
   const technologiesDatabase = [
-    { name: "MySQL", icon: "fas fa-database" },
-    { name: "MongoDB", icon: "fas fa-database" },
-    { name: "PostgreSQL", icon: "fas fa-database" },
+    { name: "MySQL", icon: "fas fa-database", icon2:"fa-regular fa-dolphin" },
+    { name: "PostgreSQL", icon: "fas fa-database", icon2:"fa-regular fa-elephant" },
   ];
   return (
     <Fragment>
       <header className="bg-gray-900">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold leading-tight text-white">
-            Sobre mí
+            Este Soy Yo
           </h1>
           <p className="mt-1 text-lg text-gray-400">
             Aquí encontrarás información sobre mí y mis habilidades.
@@ -45,7 +46,7 @@ function About() {
               </div>
               <div className="sm:w-2/3 sm:pl-8">
                 <h2 className="text-2xl font-bold leading-tight text-gray-900">
-                  Mi nombre completo
+                  Alejandro Palacios Gomez
                 </h2>
                 <p className="mt-2 text-lg text-gray-500">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -55,7 +56,7 @@ function About() {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                   
                   <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                    <div className="bg-white overflow-hidden shadow rounded-lg">
+                    <div className="bg-white shadow rounded-lg">
                       <div className="px-4 py-5 sm:p-6">
                         <h3 className="text-lg leading-6 font-medium text-gray-900 text-center">
                           Frontend Technologies
@@ -69,7 +70,9 @@ function About() {
                               >
                                 <i
                                   className={`${technology.icon} text-indigo-500`}
+                                  
                                 />
+                                
                                 <span>{technology.name}</span>
                               </li>
                             ))}
@@ -77,7 +80,7 @@ function About() {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-white overflow-hidden shadow rounded-lg">
+                    <div className="bg-white shadow rounded-lg">
                       <div className="px-4 py-5 sm:p-6">
                         <h3 className="text-lg leading-6 font-medium text-gray-900 text-center">
                           Backend Technologies
@@ -92,6 +95,9 @@ function About() {
                                 <i
                                   className={`${technology.icon} text-indigo-500`}
                                 />
+                                <i
+                                  className={`${technology.icon2} text-indigo-500`}
+                                />
                                 <span>{technology.name}</span>
                               </li>
                             ))}
@@ -99,7 +105,7 @@ function About() {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-white overflow-hidden shadow rounded-lg">
+                    <div className="bg-white shadow rounded-lg">
                       <div className="px-4 py-5 sm:p-6">
                         <h3 className="text-lg leading-6 font-medium text-gray-900 text-center">
                           Database Technologies
@@ -113,6 +119,9 @@ function About() {
                               >
                                 <i
                                   className={`${technology.icon} text-indigo-500`}
+                                />
+                                <i
+                                  className={`${technology.icon2} text-indigo-500`}
                                 />
                                 <span>{technology.name}</span>
                               </li>
