@@ -1,7 +1,7 @@
 import { React, Fragment } from "react";
 import selfie from "../img/Selfie2.jpg";
-import '@fortawesome/fontawesome-free/css/all.css';
-
+import "@fortawesome/fontawesome-free/css/all.css";
+import CardSlider from "../componentes/CardSlider";
 
 function About() {
   const technologiesFrontend = [
@@ -13,13 +13,17 @@ function About() {
 
   const technologiesBackend = [
     { name: "Node.js", icon: "fab fa-node-js" },
-    { name: "Express Js", icon: "fa fa-arrow-right", icon2:"fab fa-node-js" },
-    { name: "Sequelize", icon: "fa fa-arrow-right" , icon2:"fab fa-node-js" }
+    { name: "Express Js", icon: "fa fa-arrow-right", icon2: "fab fa-node-js" },
+    { name: "Sequelize", icon: "fa fa-arrow-right", icon2: "fab fa-node-js" },
   ];
 
   const technologiesDatabase = [
-    { name: "MySQL", icon: "fas fa-database", icon2:"fa-regular fa-dolphin" },
-    { name: "PostgreSQL", icon: "fas fa-database", icon2:"fa-regular fa-elephant" },
+    { name: "MySQL", icon: "fas fa-database", icon2: "fa-regular fa-dolphin" },
+    {
+      name: "PostgreSQL",
+      icon: "fas fa-database",
+      icon2: "fa-regular fa-elephant",
+    },
   ];
   return (
     <Fragment>
@@ -54,7 +58,6 @@ function About() {
                   turpis quis eros bibendum, vel rutrum ex finibus.
                 </p>
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                  
                   <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="bg-white shadow rounded-lg">
                       <div className="px-4 py-5 sm:p-6">
@@ -70,9 +73,8 @@ function About() {
                               >
                                 <i
                                   className={`${technology.icon} text-indigo-500`}
-                                  
                                 />
-                                
+
                                 <span>{technology.name}</span>
                               </li>
                             ))}
@@ -131,6 +133,14 @@ function About() {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div>
+                  <div className="sm:w-2/3 sm:pl-8">
+                    <h2 className="text-2xl font-bold leading-tight text-gray-900">
+                      Proyectos realizados
+                    </h2>
+                  </div>
+                  <CardSlider />
                 </div>
               </div>
             </div>
