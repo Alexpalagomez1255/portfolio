@@ -28,7 +28,7 @@ function Contact() {
                     Email
                   </div>
                   <div className="text-sm text-gray-500">
-                    <a href="mailto:tu-email@example.com">tu-email@example.com</a>
+                    <a href="mailto:alexpalagomez_1255@hotmail.com " target="_blank"  rel="noopener noreferrer">alexpalagomez_1255@hotmail.com</a>
                   </div>
                 </div>
               </div>
@@ -45,7 +45,7 @@ function Contact() {
                     LinkedIn
                   </div>
                   <div className="text-sm text-gray-500">
-                    <a href="https://www.linkedin.com/in/tu-linkedin/">linkedin.com/in/tu-linkedin/</a>
+                    <a href="https://www.linkedin.com/in/alejandro-palacios-gomez-6a1292172/" target="_blank"  rel="noopener noreferrer">Alejandro-palacios-gomez-6a1292172</a>
                   </div>
                 </div>
               </div>
@@ -62,7 +62,7 @@ function Contact() {
                     GitHub
                   </div>
                   <div className="text-sm text-gray-500">
-                    <a href="https://github.com/tu-usuario">github.com/tu-usuario</a>
+                    <a href="https://github.com/Alexpalagomez1255" target="_blank"  rel="noopener noreferrer">Alexpalagomez1255</a>
                   </div>
                 </div>
               </div>

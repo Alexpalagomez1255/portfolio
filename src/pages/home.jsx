@@ -45,7 +45,7 @@ function Home() {
                   <p className="mt-2 max-w-2xl text-sm text-gray-500">
                     Gracias por visitar mi portafolio y por tu interés en mi
                     trabajo. Si tienes alguna pregunta o estás interesado en
-                    trabajar conmigo, no dudes en ponerte en contacto conmigo.{" "}
+                    trabajar conmigo, no dudes en ponerte en contacto conmigo.
                   </p>
                 </div>
               </div>

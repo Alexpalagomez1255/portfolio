@@ -29,7 +29,7 @@ const cards = [
 const Card = ({ card }) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
-      <img src={card.imageUrl} alt={card.title} className="h-48 w-64 object-cover mb-4" />
+      <img src={card.imageUrl} alt={card.title} className="h-48 w-64 object-cover mb-4 rounded-lg" />
       <h3 className="text-lg font-bold mb-2">{card.title}</h3>
       <p className="text-gray-600">{card.description}</p>
       <a

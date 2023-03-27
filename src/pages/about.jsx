@@ -53,10 +53,20 @@ function About() {
                   Alejandro Palacios Gomez
                 </h2>
                 <p className="mt-2 text-lg text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  ac tortor nulla. Integer vitae justo velit. Maecenas varius
-                  turpis quis eros bibendum, vel rutrum ex finibus.
+                  Soy una persona apasionada por la tecnología y me encanta
+                  adquirir nuevos conocimientos constantemente. Me gusta
+                  mantenerme actualizado en las últimas tendencias y tecnologías
+                  emergentes, por lo que siempre estoy estudiando y aprendiendo
+                  sobre ellas.
                 </p>
+                <p className="mt-2 text-lg text-gray-500">
+                  Además, soy proactivo y me gusta tomar la iniciativa para
+                  alcanzar mis objetivos. Soy autónomo y tengo la capacidad de
+                  trabajar de manera independiente. También soy un buen
+                  colaborador y tengo habilidades para trabajar en equipo,
+                  resolver problemas y pensar de manera lógica.
+                </p>
+
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                   <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="bg-white shadow rounded-lg">
@@ -134,19 +144,20 @@ function About() {
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div className="sm:w-2/3 sm:pl-8">
-                    <h2 className="text-2xl font-bold leading-tight text-gray-900">
-                      Proyectos realizados
-                    </h2>
-                  </div>
-                  <CardSlider />
-                </div>
               </div>
             </div>
           </div>
         </div>
       </main>
+
+      <div className=" mx-6 pb-0 lg:mx-auto mb-28">
+        <div className="sm:w-2/3 sm:pl-8">
+          <h2 className="text-2xl font-bold leading-tight text-gray-900">
+            Proyectos realizados
+          </h2>
+        </div>
+        <CardSlider />
+      </div>
     </Fragment>
   );
 }
