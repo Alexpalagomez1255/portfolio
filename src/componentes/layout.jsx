@@ -12,7 +12,7 @@ function Layout() {
       <div className="flex flex-col flex-grow">
         <Outlet/>
       </div>
-      <footer className="bg-gray-800 text-white py-4 px-6 flex-shrink-0  bottom-0 w-full sm:py-4 sm:px-6 sm:fixed">
+      <footer className="bg-gray-800 text-white py-6 px-6 flex-shrink-0  bottom-0 w-full sm:py-6 sm:px-6 sm:fixed">
         <Footer />
       </footer>
     </>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 
+
 Modal.setAppElement('#root');
 
 const ContactForm = () => {
@@ -24,6 +25,9 @@ const ContactForm = () => {
         try {
       
       setIsModalOpen(true);
+      console.log(formData.name);
+      console.log(formData.email);
+      console.log(formData.message);
       setFormData({
         name: '',
         email: '',
@@ -34,7 +38,7 @@ const ContactForm = () => {
       alert('Ha ocurrido un error al enviar tu mensaje.');
     }
   };
-
+  
   return (
     <>
       <form onSubmit={handleSubmit} className="max-w-lg mx-auto mt-10 h-screen">
@@ -74,7 +78,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="text-center">
-          <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-400">Enviar</button>
+          <button type="submit" onClick={handleSubmit} className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-400">Enviar</button>
         </div>
       </form>
       <Modal
@@ -84,8 +88,8 @@ const ContactForm = () => {
         className="modal absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg p-4"
         overlayClassName="overlay"
       >
-        <h2 className="text-2xl font-bold mb-2">Mensaje enviado</h2>
-        <p className="mb-4">Tu mensaje ha sido enviado correctamente.</p>
+        <h2 className="text-2xl font-bold mb-2">Formulario en proceso...</h2>
+        <p className="mb-4">Gracias por su comprensión</p>
         <button onClick={() => setIsModalOpen(false)} className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-400">Cerrar</button>
       </Modal>
     </>
